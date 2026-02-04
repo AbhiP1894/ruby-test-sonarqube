@@ -1,10 +1,11 @@
-require 'sinatra'
-require 'sqlite3'
-require 'erb'
 
 require 'sinatra'
+
 require 'sqlite3'
 require 'erb'
+set :protection, false
+set :host_authorization, false if respond_to?(:host_authorization)
+
 
 # SQL Injection vulnerability
 # def run_query(query)
