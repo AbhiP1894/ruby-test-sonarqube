@@ -1,0 +1,39 @@
+# Bundler
+Gemfile.lock
+*.gem
+*.rbc
+/.bundle/
+/vendor/bundle/
+/lib/bundled_packages/
+*.gemspec
+
+# Ruby
+*.rb~
+.ruby-version
+.ruby-gemset
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies
+/node_modules/
+
+# Logs
+*.log
+/log/
+
+# Temp files
+/tmp/
+/temp/
+
+# Environment variables
+.env
+.env.local

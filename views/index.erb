@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vulnerable App</title>
+</head>
+<body>
+  <h1>Welcome to Vulnerable App</h1>
+  <p><%= @message %></p> <!-- Potential XSS vulnerability -->
+  
+  <form method="POST" action="/search">
+    <label for="name">Search by Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Search">
+  </form>
+
+  <% if @results %>
+    <h2>Search Results</h2>
+    <ul>
+      <% @results.each do |row| %>
+        <li><%= row.join(", ") %></li> <!-- Unsafe output without sanitization -->
+      <% end %>
+    </ul>
+  <% end %>
+</body>
+</html>
