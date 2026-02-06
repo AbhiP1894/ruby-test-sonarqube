@@ -30,5 +30,11 @@ RSpec.describe Calculator do
       expect { calculator.divide(10, 0) }
         .to raise_error(ArgumentError, 'Division by zero')
     end
+    
+    it 'evaluates expression dynamically' do
+    calc = Calculator.new
+    expect(calc.calculate("2 + 3")).to eq(5)
+    end
+
   end
 end
