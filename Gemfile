@@ -6,6 +6,7 @@ gem 'sqlite3'
 gem "rackup", "~> 2.1"
 gem 'rspec'
 gem 'simplecov'
-gem 'simplecov-lcov'
+gem 'simplecov-json'
+
 
 gem 'rack-test'

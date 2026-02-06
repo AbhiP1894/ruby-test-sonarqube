@@ -14,16 +14,14 @@
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require 'simplecov'
-require 'simplecov-lcov'
-
+require 'simplecov-json'
 SimpleCov::Formatter::LcovFormatter.config do |c|
   c.report_with_single_file = true
   c.single_report_path = 'coverage/lcov.info'
 end
 
 SimpleCov.formatters = [
-  SimpleCov::Formatter::HTMLFormatter,
-  SimpleCov::Formatter::LcovFormatter
+  SimpleCov::Formatter::JSONFormatter
 ]
 
 SimpleCov.start do
