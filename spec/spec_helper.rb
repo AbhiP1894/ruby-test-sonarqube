@@ -1,10 +1,6 @@
 require 'simplecov'
-require 'simplecov_json_formatter'
-
-# Disable resultset & HTML completely
-SimpleCov.formatters = [
-  SimpleCov::Formatter::JSONFormatter
-]
+require 'simplecov-cobertura'
+SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
 
 SimpleCov.start do
   add_filter '/spec/'
