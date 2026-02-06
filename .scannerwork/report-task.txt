@@ -1,6 +1,0 @@
-projectKey=25.1_Ruby:master
-serverUrl=http://sonar.cybage.com
-serverVersion=25.1.0.102122
-dashboardUrl=http://sonar.cybage.com/dashboard?id=25.1_Ruby%3Amaster
-ceTaskId=109ab727-7a46-4733-9217-71320508c526
-ceTaskUrl=http://sonar.cybage.com/api/ce/task?id=109ab727-7a46-4733-9217-71320508c526
