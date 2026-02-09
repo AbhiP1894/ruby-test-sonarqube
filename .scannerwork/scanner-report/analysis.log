@@ -1,0 +1,98 @@
+Plugins:
+  - SonarQube CNES Report 5.0.2 (cnesreport)
+  - Sonargraph Integration 7.0.0 (sonargraphintegration)
+  - PDF Report 9.9 (analysispdfreport)
+  - Community Branch Plugin 1.23.0 (communityBranchPlugin)
+  - SQL language plugin 1.4.0 (sql)
+  - YAML Analyzer 1.9.1 (yaml)
+Bundled analyzers:
+  - Clean as You Code 2.4.0.2018 (cayc)
+  - JaCoCo 1.3.0.1538 (jacoco)
+  - IaC Code Quality and Security 1.40.0.13983 (iac)
+  - Text Code Quality and Security 2.20.0.5038 (text)
+Global server settings:
+  - sonar.azureresourcemanager.file.suffixes=.bicep
+  - sonar.core.id=962A5A66-AXc0orO7-6HHQSDqgTzy
+  - sonar.core.serverBaseURL=http://sonar.cybage.com/
+  - sonar.core.startTime=2026-02-06T12:41:26+0530
+  - sonar.cs.file.suffixes=.cs,.razor
+  - sonar.css.file.suffixes=.css,.less,.scss,.sass
+  - sonar.docker.file.patterns=Dockerfile,*.dockerfile
+  - sonar.findbugs.timeout=3600000
+  - sonar.flex.file.suffixes=as
+  - sonar.forceAuthentication=true
+  - sonar.go.file.suffixes=.go
+  - sonar.html.file.suffixes=.html,.xhtml,.cshtml,.vbhtml,.aspx,.ascx,.rhtml,.erb,.shtm,.shtml,.cmp,.twig
+  - sonar.ipynb.file.suffixes=ipynb
+  - sonar.java.file.suffixes=.java,.jav
+  - sonar.java.jvmframeworkconfig.file.patterns=**/src/main/resources/**/*app*.properties,**/src/main/resources/**/*app*.yaml,**/src/main/resources/**/*app*.yml
+  - sonar.javascript.file.suffixes=.js,.jsx,.cjs,.mjs,.vue
+  - sonar.json.file.suffixes=.json
+  - sonar.jsp.file.suffixes=.jsp,.jspf,.jspx
+  - sonar.kotlin.file.suffixes=.kt,.kts
+  - sonar.multi-quality-mode.enabled=false
+  - sonar.pdf.issue.details=NONE
+  - sonar.pdf.other.metrics=uncovered_lines
+  - sonar.pdf.skip=true
+  - sonar.php.file.suffixes=php,php3,php4,php5,phtml,inc
+  - sonar.plugins.risk.consent=ACCEPTED
+  - sonar.python.file.suffixes=py
+  - sonar.qualityProfiles.allowDisableInheritedRules=false
+  - sonar.ruby.file.suffixes=.rb
+  - sonar.scala.file.suffixes=.scala
+  - sonar.scm.disabled=false
+  - sonar.sql.file.suffixes=.sql
+  - sonar.terraform.file.suffixes=.tf
+  - sonar.typescript.file.suffixes=.ts,.tsx,.cts,.mts
+  - sonar.vbnet.file.suffixes=.vb
+  - sonar.xml.file.suffixes=.xml,.xsd,.xsl,.config
+  - sonar.yaml.file.suffixes=.yaml,.yml
+Project server settings:
+  - sonar.azureresourcemanager.file.suffixes=.bicep
+  - sonar.cs.file.suffixes=.cs,.razor
+  - sonar.css.file.suffixes=.css,.less,.scss,.sass
+  - sonar.docker.file.patterns=Dockerfile,*.dockerfile
+  - sonar.flex.file.suffixes=as
+  - sonar.go.file.suffixes=.go
+  - sonar.html.file.suffixes=.html,.xhtml,.cshtml,.vbhtml,.aspx,.ascx,.rhtml,.erb,.shtm,.shtml,.cmp,.twig
+  - sonar.ipynb.file.suffixes=ipynb
+  - sonar.java.file.suffixes=.java,.jav
+  - sonar.java.jvmframeworkconfig.file.patterns=**/src/main/resources/**/*app*.properties,**/src/main/resources/**/*app*.yaml,**/src/main/resources/**/*app*.yml
+  - sonar.javascript.file.suffixes=.js,.jsx,.cjs,.mjs,.vue
+  - sonar.json.file.suffixes=.json
+  - sonar.jsp.file.suffixes=.jsp,.jspf,.jspx
+  - sonar.kotlin.file.suffixes=.kt,.kts
+  - sonar.php.file.suffixes=php,php3,php4,php5,phtml,inc
+  - sonar.python.file.suffixes=py
+  - sonar.ruby.file.suffixes=.rb
+  - sonar.scala.file.suffixes=.scala
+  - sonar.sql.file.suffixes=.sql
+  - sonar.terraform.file.suffixes=.tf
+  - sonar.typescript.file.suffixes=.ts,.tsx,.cts,.mts
+  - sonar.vbnet.file.suffixes=.vb
+  - sonar.xml.file.suffixes=.xml,.xsd,.xsl,.config
+  - sonar.yaml.file.suffixes=.yaml,.yml
+Project scanner properties:
+  - sonar.coverageReportPaths=coverage/lcov.info
+  - sonar.exclusions=**/vendor/**
+  - sonar.host.url=http://172.27.59.174:9000/
+  - sonar.projectBaseDir=C:\Users\abhipatil\Desktop\sonar-test\ruby_vulnerable_project-25.1-test
+  - sonar.projectKey=25.1_Ruby:master
+  - sonar.projectName=25.1_Ruby
+  - sonar.projectVersion=1
+  - sonar.scanner.apiBaseUrl=http://172.27.59.174:9000/api/v2
+  - sonar.scanner.app=ScannerCLI
+  - sonar.scanner.appVersion=8.0.1.6346
+  - sonar.scanner.arch=amd64
+  - sonar.scanner.bootstrapStartTime=1770631624432
+  - sonar.scanner.home=E:\sonar-scanner-cli-8.0.1.6346-windows-x64\sonar-scanner-8.0.1.6346-windows-x64\bin\..
+  - sonar.scanner.os=windows
+  - sonar.scanner.truststorePassword=changeit
+  - sonar.scanner.truststorePath=E:\sonar-scanner-cli-8.0.1.6346-windows-x64\sonar-scanner-8.0.1.6346-windows-x64\jre\lib\security\cacerts
+  - sonar.scanner.wasEngineCacheHit=true
+  - sonar.scanner.wasJreCacheHit=HIT
+  - sonar.sources=lib
+  - sonar.test.inclusions=**/*_spec.rb
+  - sonar.tests=spec
+  - sonar.token=******
+  - sonar.working.directory=C:\Users\abhipatil\Desktop\sonar-test\ruby_vulnerable_project-25.1-test\.scannerwork

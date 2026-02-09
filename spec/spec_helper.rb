@@ -1,4 +1,9 @@
 require 'simplecov'
+begin
+  require 'simplecov-json'
+rescue LoadError
+  # simplecov-json not installed; fallback to built-in JSON formatter if available
+end
 require 'simplecov-cobertura'
 
 SimpleCov::Formatter::CoberturaFormatter.class_eval do
@@ -7,8 +12,20 @@ SimpleCov::Formatter::CoberturaFormatter.class_eval do
   end
 end
 
-SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+# Configure multi-formatter: prefer JSON formatter (built-in or gem) + Cobertura
+formatters = []
+formatters << SimpleCov::Formatter::CoberturaFormatter
+if defined?(SimpleCov::Formatter::JSONFormatter)
+  formatters << SimpleCov::Formatter::JSONFormatter
+elsif defined?(SimpleCov::Formatter::JsonFormatter)
+  formatters << SimpleCov::Formatter::JsonFormatter
+end
 
+if formatters.size > 1
+  SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new(formatters)
+else
+  SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+end
 
 SimpleCov.start do
   add_filter '/spec/'
