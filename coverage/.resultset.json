@@ -5,20 +5,20 @@
         "lines": [
           1,
           1,
-          1,
+          0,
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
-          1,
+          0,
           null,
           null,
           1,
-          2,
-          1,
+          0,
+          0,
           null,
           null,
           1,
@@ -30,6 +30,6 @@
         ]
       }
     },
-    "timestamp": 1770625169
+    "timestamp": 1770631309
   }
 }
