@@ -1,6 +1,14 @@
 require 'simplecov'
 require 'simplecov-cobertura'
+
+SimpleCov::Formatter::CoberturaFormatter.class_eval do
+  def output_filename
+    'cobertura.xml'
+  end
+end
+
 SimpleCov.formatter = SimpleCov::Formatter::CoberturaFormatter
+
 
 SimpleCov.start do
   add_filter '/spec/'
